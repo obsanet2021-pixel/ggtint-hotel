@@ -1,4 +1,4 @@
-﻿import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import FloatingButtons from './components/FloatingButtons';
@@ -11,7 +11,8 @@ import Booking from './pages/Booking';
 import './App.css';
 function App() {
   return (
-    <Router>
+    // add basename so BrowserRouter works correctly on GitHub Pages
+    <Router basename="/ggtint-hotel">
       <CustomCursor />
       <Navbar />
       <main>
