@@ -95,62 +95,56 @@
   --off-white: #F5F0E8;      /* Primary text */
   --muted: #8A8880;          /* Secondary text */
 }
+```
 
 Typography
-Font	Usage	Weights
-Bebas Neue	Display, Headings, Hero Titles	Regular
-Barlow Condensed	Navigation, Buttons, Labels, Stats	400,500,600,700
-Barlow	Body text, Descriptions, Testimonials	300,400,500,600
-Spacing System
-Base unit: 4px (0.25rem)
 
-Section padding: 120px 48px (desktop) → 80px 24px (mobile)
+- Bebas Neue — Display, Headings, Hero Titles
+- Barlow Condensed — Navigation, Buttons, Labels, Stats
+- Barlow — Body text, Descriptions, Testimonials
 
-Component gaps: 8px, 16px, 24px, 32px, 48px, 64px
+Spacing system: base unit 4px (0.25rem). Section padding and component gaps as needed.
 
 
-📁 Project Structure
-text
+## 📁 Project Structure
+
+```
 ggtint-hotel/
-│
 ├── public/                      # Static assets
 │   └── vite.svg                 # Favicon / logo
-│
 ├── src/
 │   ├── components/              # Reusable UI components
-│   │   ├── Navbar.jsx          # Main navigation with booking CTA
-│   │   ├── Footer.jsx          # Footer with links and social media
-│   │   ├── FloatingButtons.jsx # WhatsApp & booking floaters
-│   │   └── CustomCursor.jsx    # Custom cursor implementation
-│   │
+│   │   ├── Navbar.jsx           # Main navigation with booking CTA
+│   │   ├── Footer.jsx           # Footer with links and social media
+│   │   ├── FloatingButtons.jsx  # WhatsApp & booking floaters
+│   │   └── CustomCursor.jsx     # Custom cursor implementation
 │   ├── pages/                   # Route-based pages
-│   │   ├── Home.jsx            # Landing page with hero, rooms, experience
-│   │   ├── About.jsx           # Hotel story, stats, values
-│   │   ├── Rooms.jsx           # All room types with details
-│   │   ├── Services.jsx        # Amenities, dining, events, wellness
-│   │   └── Booking.jsx         # Reservation form with validation
-│   │
+│   │   ├── Home.jsx             # Landing page with hero, rooms, experience
+│   │   ├── About.jsx            # Hotel story, stats, values
+│   │   ├── Rooms.jsx            # All room types with details
+│   │   ├── Services.jsx         # Amenities, dining, events, wellness
+│   │   └── Booking.jsx          # Reservation form with validation
 │   ├── App.jsx                  # Main app with routing configuration
-│   ├── App.css                  # Global component styles
 │   ├── main.jsx                 # Application entry point
 │   └── index.css                # Global variables & base styles
-│
 ├── index.html                   # HTML entry point
 ├── package.json                 # Dependencies & scripts
 ├── vite.config.js               # Vite configuration
-├── .gitignore                   # Git ignore rules
 └── README.md                    # Documentation (you are here)
+```
 
-🚀 Quick Start
+## 🚀 Quick Start
+
 Prerequisites
-Node.js >= 18.0.0
 
-npm >= 9.0.0 or yarn >= 1.22.0
+- Node.js >= 18.0.0
+- npm >= 9.0.0 or yarn >= 1.22.0
 
 One-Click Setup
-bash
+
+```bash
 # Clone the repository
-git clone https://github.com/yourusername/ggtint-hotel.git
+git clone https://github.com/obsanet2021-pixel/ggtint-hotel.git
 cd ggtint-hotel
 
 # Install dependencies
@@ -158,276 +152,82 @@ npm install
 
 # Start development server
 npm run dev
-The application will open automatically at http://localhost:3000 ✨
+```
+
+The application will open at http://localhost:3000 by default.
 
 
-🛠️ Tech Stack
-Core Framework
-Technology	Version	Purpose
-React	18.2.0	UI library for component-based architecture
-React DOM	18.2.0	DOM rendering for React
-React Router DOM	6.22.0	Client-side routing and navigation
-Build Tooling
-Technology	Version	Purpose
-Vite	5.0.8	Next-gen build tool & dev server
-@vitejs/plugin-react	4.2.1	Fast Refresh & JSX support
-Styling
-Pure CSS — No frameworks, fully custom design system
+## 🛠️ Tech Stack
 
-CSS Variables — Theming and dynamic styling
-
-CSS Grid & Flexbox — Modern layout techniques
-
-CSS Animations — Keyframe-based micro-interactions
-
-Development Tools
-ESLint — Code linting (optional, configurable)
-
-Prettier — Code formatting (optional)
+- React 18.2.0 — UI library
+- React Router DOM 6.22.0 — Client-side routing
+- Vite 5.x — Dev server & build tool
+- Plain CSS with CSS variables for theming
 
 
-📱 Pages & Routes
-Route	Component	Description
-/	Home	Hero section, room highlights, experience grid, testimonials, location map
-/about	About	Hotel story, founding year, team stats, values
-/rooms	Rooms	Complete room catalog with pricing, sizes, amenities
-/services	Services	Dining, events, wellness, concierge, celebrations, security
-/booking	Booking	Reservation form with check-in/out, guest count, room selection
-/dining	Services	(Alias) Restaurant and bar information
-/events	Services	(Alias) Event spaces and meeting rooms
-/virtual-tour	Services	(Alias) 360° virtual tour interface
+## 📱 Pages & Routes
 
-🎯 Core Components
-Navbar
-Fixed positioned navigation
-
-Logo, links, and booking button
-
-Transparent background with gradient fade
-
-Footer
-4-column layout with brand info, explore links, stay links, contact info
-
-Social media icons
-
-Copyright and watermark
-
-FloatingButtons
-Fixed position bottom-right
-
-WhatsApp booking button with direct messaging
-
-Book a Room button for quick navigation
-
-CustomCursor
-Smooth follower animation
-
-Gold dot with expanding ring on hover
-
-Scale effect on interactive elements
-
-Home Page Sections
-Hero — Full-screen video/photo simulation with architectural lines
-
-Marquee — Scrolling feature strip with rotating amenities
-
-Rooms Preview — Featured rooms with 360° badge
-
-Experience — 3-panel grid showcasing offerings
-
-Testimonials — Guest review with star ratings
-
-Location — Map simulation and address details
+- / — Home
+- /about — About
+- /rooms — Rooms
+- /services — Services
+- /booking — Booking
+- /virtual-tour — 360° Virtual Tour
 
 
-⚙️ Installation & Setup
-Step-by-Step Guide
-bash
-# 1. Create project directory
-mkdir ggtint-hotel && cd ggtint-hotel
+## ⚙️ Installation & Setup
 
-# 2. Initialize npm project
-npm init -y
+Follow Quick Start above. See package.json for scripts (dev, build, preview).
 
-# 3. Install dependencies
-npm install react react-dom react-router-dom
-npm install -D vite @vitejs/plugin-react
 
-# 4. Create directory structure
-mkdir -p src/{components,pages}
+## 🔧 Build & Deployment
 
-# 5. Copy source files (from this repo)
+Production build:
 
-# 6. Run development server
-npm run dev
-Package.json Scripts
-json
-{
-  "scripts": {
-    "dev": "vite",           // Start dev server on port 3000
-    "build": "vite build",   // Production build to /dist
-    "preview": "vite preview" // Preview production build locally
-  }
-}
-
-🔧 Build & Deployment
-Production Build
-bash
-# Create optimized production build
+```bash
 npm run build
+```
 
-# The build will be output to the 'dist' directory
-Deployment Options
-Vercel (Recommended)
-bash
-npm install -g vercel
-vercel
-Netlify
-bash
-npm run build
-# Drag and drop 'dist' folder to Netlify
-GitHub Pages
-bash
-npm run build
-npm install -g gh-pages
-gh-pages -d dist
-AWS S3 / CloudFront
-bash
-npm run build
-aws s3 sync dist/ s3://your-bucket-name/
+Deploy to Vercel, Netlify, GitHub Pages, or S3/CloudFront as preferred.
 
-🌍 Environment Variables
-Create a .env file in the root directory:
 
-env
-# API Configuration (if applicable)
+## 🌍 Environment Variables
+
+Create a .env file in the project root for runtime configuration. Example:
+
+```
 VITE_API_URL=https://api.ggthotel.com
-
-# WhatsApp Integration
 VITE_WHATSAPP_NUMBER=251912345678
-
-# Google Maps API (optional)
 VITE_GOOGLE_MAPS_KEY=your_api_key_here
-
-📝 Code Style
-Component Structure
-jsx
-// Import statements
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
-import './Component.css';
-
-// Component definition
-const Component = ({ prop1, prop2 }) => {
-  // Hooks & state
-  const [state, setState] = useState(initial);
-  
-  // Handlers
-  const handleClick = () => { /* ... */ };
-  
-  // Render
-  return (
-    <div className="component">
-      {/* JSX */}
-    </div>
-  );
-};
-
-// Export
-export default Component;
-CSS Naming Convention (BEM-like)
-css
-/* Block */
-.room-card { }
-
-/* Element */
-.room-card__title { }
-.room-card__price { }
-
-/* Modifier */
-.room-card--featured { }
-.room-card__price--sale { }
-Git Commit Convention
-text
-feat: add new room filtering feature
-fix: resolve booking form validation bug
-style: update navbar spacing and typography
-docs: update README with deployment instructions
-refactor: optimize CustomCursor animation performance
-
-🤝 Contributing
-We welcome contributions! Please follow these steps:
-
-Fork the repository
-
-Create a feature branch
-
-bash
-git checkout -b feature/amazing-feature
-Commit your changes
-
-bash
-git commit -m 'feat: add amazing feature'
-Push to the branch
-
-bash
-git push origin feature/amazing-feature
-Open a Pull Request
-
-Development Guidelines
-✅ Write meaningful commit messages
-
-✅ Test changes across multiple browsers
-
-✅ Ensure responsive design (320px → 1920px)
-
-✅ Follow existing code style and patterns
-
-✅ Update documentation as needed
+```
 
 
-📄 License
+## 📝 Code Style
+
+Follow consistent component structure, meaningful commit messages, and test responsive layouts.
+
+
+## 🤝 Contributing
+
+Contributions welcome — fork the repo, create a branch, and open a pull request. Follow development guidelines in this README.
+
+
+## 📄 License
+
 This project is licensed under the MIT License — see the LICENSE file for details.
 
-text
-MIT License
 
-Copyright (c) 2025 GGT International Hotel
+## 📞 Contact & Support
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions...
-
-📞 Contact & Support
-Development Team
-Project Lead — @yourusername
-
-UI/UX Design — GGT Creative Studio
-
-Technical Support — tech@ggthotel.com
-
-Hotel Contact
-Service	Contact
-📞 Reservations	+251 912 345 678
-📧 Email	reservations@ggthotel.com
-💬 WhatsApp	+251 912 345 678
-🌐 Website	www.ggthotel.com
-📍 Address	Near Oliyad Cinema, Adama, Oromia Region, Ethiopia
-Support Hours
-Phone Support: 24/7
-
-Email Response: Within 2 hours
-
-WhatsApp: Instant messaging, 24/7
-
+- Project Lead — @yourusername
+- Technical Support — tech@ggthotel.com
+- Reservations — +251 912 345 678
+- Website — www.ggthotel.com
+- Address — Near Oliyad Cinema, Adama, Oromia Region, Ethiopia
 
 <div align="center">
 ⭐ Star this repo if you find it useful!
-Built with ❤️ in Adama, Ethiopia
 
 <sub>© 2025 GGT International Hotel. All rights reserved.</sub>
 
-</div> ```
+</div>
