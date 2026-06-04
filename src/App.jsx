@@ -8,10 +8,15 @@ import About from './pages/About';
 import Rooms from './pages/Rooms';
 import Services from './pages/Services';
 import Booking from './pages/Booking';
+import Gallery from './pages/Gallery';
+import Dining from './pages/Dining';
+import Events from './pages/Events';
+import VirtualTour from './pages/VirtualTour';
 import './App.css';
 function App() {
   return (
-    <Router>
+    // add basename so BrowserRouter works correctly on GitHub Pages
+    <Router basename="/ggtint-hotel">
       <CustomCursor />
       <Navbar />
       <main>
@@ -21,9 +26,10 @@ function App() {
           <Route path="/rooms" element={<Rooms />} />
           <Route path="/services" element={<Services />} />
           <Route path="/booking" element={<Booking />} />
-          <Route path="/dining" element={<Services />} />
-          <Route path="/events" element={<Services />} />
-          <Route path="/virtual-tour" element={<Services />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/dining" element={<Dining />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/virtual-tour" element={<VirtualTour />} />
         </Routes>
       </main>
       <Footer />
