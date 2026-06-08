@@ -45,7 +45,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        <div className="footer-copy">© 2025 GGT International Hotel, Adama · All rights reserved Developed by <a href="https://obsan2021.github.io/clover-digital/" target="_blank" rel="noopener noreferrer">Clover Digital</a></div>
+        <div className="footer-copy">© 2025 GGT International Hotel, Adama · All rights reserved Developed by <a href="https://officialcloverdigital.com/" target="_blank" rel="noopener noreferrer">Clover Digital</a></div>
         <div className="footer-watermark">Designed for bold living</div>
       </div>
     </footer>
